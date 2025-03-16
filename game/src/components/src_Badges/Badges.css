@@ -1,0 +1,158 @@
+/* Reset body & html to allow the container to be centered 
+   and to maintain a full viewport height for background, if needed. */
+   body,
+   html {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #fff;
+     /* If you want the container vertically centered, 
+        you could use flex here, but usually we let the container 
+        scroll naturally. 
+        Example:
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     */
+   }
+   
+   /* Main container with fixed width & scrollable content */
+   .badges-container {
+     width: 100%;
+     max-width: 1200px; 
+     height: 80vh;                 /* Fixed container height */
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;  /* Start content at top */
+     align-items: center;
+     padding: 2rem;
+     border-radius: 12px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     overflow-y: auto;            /* Allow vertical scrolling */
+     background-color: #ededed;
+     margin: 1% auto;             /* Center the container horizontally */
+   }
+   
+   /* Hide scrollbar for WebKit browsers */
+   .badges-container::-webkit-scrollbar {
+     display: none;
+   }
+   
+   /* Title styling */
+   .badges-title {
+     font-size: 2.5rem;
+     font-weight: bold;
+     color: #333;
+     margin-bottom: 2rem;
+     text-transform: uppercase;
+     font-family: "Times New Roman", Times, serif;
+   }
+   
+   /* Points display section */
+   .points-display {
+     background: linear-gradient(45deg, #4bd7e6, #8ee2e3);
+     color: #fff;
+     padding: 1rem 2rem;
+     border-radius: 12px;
+     margin: 0 auto 2rem auto; 
+     max-width: 300px; 
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     transition: transform 0.3s ease;
+   }
+   
+   .points-display:hover {
+     transform: scale(1.03);
+   }
+   
+   .points-display h3 {
+     margin: 0;
+     font-size: 1.3rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+   }
+   
+   .points-value {
+     font-size: 2rem;
+     font-weight: bold;
+     margin: 0.5rem 0 0;
+   }
+   
+   /* Grid container for badges */
+   .badges-grid {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 2rem;
+   }
+   
+   /* Badge card styling */
+   .badge-card {
+     background: #fff;
+     padding: 1.5rem;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 250px; /* Maintain consistent card height */
+     overflow: hidden;
+   }
+   
+   .badge-card:hover {
+     transform: scale(1.05);
+     cursor: pointer;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+   }
+   
+   /* Badge title */
+   .badge-title {
+     display: inline-block;
+     background: #8ee2e3;
+     color: rgb(90, 61, 148);
+     padding: 0.75rem 1.5rem;
+     border-radius: 20px;
+     font-size: 1rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+     text-transform: capitalize;
+   }
+   
+   /* Badge description and requirement text */
+   .badge-description {
+     color: #555;
+     font-size: 1rem;
+     line-height: 1.4;
+     text-align: center;
+     margin-bottom: 1rem;
+   }
+   .badge-requirement {
+     font-size: 0.9rem;
+     color: #7f8184;
+     margin: 0;
+   }
+   
+   /* Redeem button styling */
+   .redeem-button {
+     background-color: #7a6c33; /* Golden background */
+     color: white;
+     padding: 10px 16px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     font-size: 14px;
+     margin-top: 0.5rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     transition: background-color 0.3s ease;
+   }
+   
+   .redeem-button:hover {
+     background-color: #e6b800; /* Slightly darker golden hue */
+   }
+   

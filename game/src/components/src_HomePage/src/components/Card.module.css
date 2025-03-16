@@ -1,0 +1,34 @@
+.card {
+  
+  width: 25%;
+  height: 37vh;
+
+  
+  background: linear-gradient(
+    45deg, 
+    #8f81fe 0%,   
+    #b7c8e2 30%,  
+    #cfeff9 100%  
+  );
+
+  box-shadow: 2px 2px 40px hsl(var(--muted) / 0.5);
+  border-top: 0.2em solid rgb(123, 37, 157);
+  border-left: 0.2em solid rgb(171, 35, 137);
+  border-radius: 20px;
+  padding: 5px 5px 10px 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin: 0;
+  position: relative;
+}
+
+
+.body {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

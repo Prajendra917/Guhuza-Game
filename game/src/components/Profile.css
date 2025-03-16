@@ -1,0 +1,97 @@
+/* Profile page container */
+.profile-page {
+    padding: 1.2rem 1rem;
+  }
+  
+  /* Profile card styling */
+  .profile-card {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  /* Profile header */
+  .profile-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+  }
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #8f81fe;
+  }
+  .profile-name {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .profile-email {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* User info section (Points and Rank) */
+  .profile-info {
+    margin-top: 1rem;
+  }
+  .info-item h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .info-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  /* Extra info section (Current Level and Stage) */
+  .profile-extra {
+    margin-top: 1.5rem;
+  }
+  .extra-item h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .extra-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  /* Badges section */
+  .profile-badges h5 {
+    margin-bottom: 0.5rem;
+  }
+  .badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .badge-container .badge {
+    font-size: 0.9rem;
+  }
+  
+  /* Redeem button */
+  .redeem-btn {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .redeem-btn:hover {
+    background-color: #218838;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
