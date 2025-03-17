@@ -9,23 +9,50 @@ Frontend Development
 •	CSS (bootstrap) – Supplies a responsive layout, adapting smoothly across different screen sizes.
 
 Backend Development 
-•	The backend is currently being developed, focusing on integrating game logic, user authentication, and data management.
-•	Node.js and Express.js are being explored for handling API requests and server-side operations.
+•	Node.js and Express.js is for handling API requests and server-side operations.
 •	MySQL or an equivalent database will store user progress, scores, and leaderboard data.
-•	Guhuza API integration is planned to enable seamless user authentication and data synchronization.
 
 APIs & External Integrations 
 •	Social media will allow users to share achievements and refer friends.
 •	External integrations allow users to share their achievements and progress in various platforms such as, Facebook, WhatsApp, etc.
 Installation and Setup
 Follow these steps to install and run the project locally on your system.
-
 Prerequisites
 Make sure you have the following installed on your system:
-
 [Git]
 [Node.js]
 [React.js]
+Open your terminal and run the following command to clone the repository:
+```bash
+git clone https://github.com/prajenra917/GUhuza-Game.git
+```
+Change to the project directory:
+```bash
+cd/game
+```
+install node.js
+```bash
+npm install node.js
+```
+install react
+```bash
+npm install react.js
+```
+To run the project
+Browse to backend/server.js
+```bash
+cd backend
+``
+run seerver.js
+``bash
+npm run server.js
+``
+run project
+```bash
+npm run dev
+```
+
+
 
 Features
 Modular and reusable components
